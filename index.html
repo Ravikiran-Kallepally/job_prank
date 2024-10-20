@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer - Springfield, IL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .apply-link {
+            display: block;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        .apply-link:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Software Engineer (New Grad)</h1>
+        <p><strong>Location:</strong> Springfield, IL · Posted just now · 20 applicants</p>
+        <p><strong>Pay Rate:</strong> $55.00 - $65.00/hr · Hybrid</p>
+        <p>Matches your job preferences: workplace type is Hybrid.</p>
+        <p><strong>Job Type:</strong> Full-time · Entry-level</p>
+        <p>Back-End Development · Java · SQL · AWS</p>
+
+        <div class="job-details">
+            <h2>Job Summary</h2>
+            <p>We are seeking a passionate Software Engineer (New Grad) to join our dynamic team in Springfield, Illinois. The ideal candidate is eager to grow and develop software solutions for critical backend services.</p>
+        </div>
+
+        <a href="/form" id="applyLink" class="apply-link">Easy Apply</a>
+    </div>
+
+    <script>
+        document.getElementById('applyLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'apply.html';
+        });
+    </script>
+
+</body>
+</html>

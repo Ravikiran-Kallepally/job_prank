@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Hired!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: green;
+        }
+        .message {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        iframe {
+            border-radius: 8px;
+            max-width: 100%;
+            height: 315px; /* Adjust height as necessary */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Congrats ra naana!</h1>
+        <p class="message"></p>
+        
+        <!-- YouTube Video Embed -->
+        <div class="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/rdXpdkjlYtE?autoplay=1&loop=1&playlist=rdXpdkjlYtE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstName = urlParams.get('firstName');
+
+        const messageElement = document.querySelector('.message');
+        messageElement.textContent = `Enti, ${firstName}! na gurunchi telisi kuda submit chesav chudu ! 😂`;
+    </script>
+
+</body>
+</html>
